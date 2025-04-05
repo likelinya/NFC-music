@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 自动跳转到网易云音乐协议链接 -->
+    <meta http-equiv="refresh" content="0; url=orpheus://song/1808053189" />
+    <!-- 手动跳转备用链接 -->
+    <script>
+        window.location.href = "orpheus://song/1808053189";
+        // 如果跳转失败，提示用户点击
+        setTimeout(function() {
+            document.getElementById("manualLink").style.display = "block";
+        }, 1000);
+    </script>
+</head>
+<body>
+    <a id="manualLink" href="orpheus://song/歌曲ID" style="display: none;">
+        点击此处打开网易云音乐
+    </a>
+</body>
+</html>
